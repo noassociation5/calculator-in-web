@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid;
+}
+
+.container {
+    display: grid;
+    place-items: center; /* Centers horizontally and vertically */
+    height: 100vh;       /* Full viewport height */
+}
