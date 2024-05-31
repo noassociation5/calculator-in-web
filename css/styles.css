@@ -15,7 +15,9 @@ html, body {
 }
 
 body{
-    background-image: url(../sources/complexisim.png.300x189_q100.png) ;
+    background-image: url(../sources/1.webp)  ;
+    background-size: cover;       
+    background-repeat: no-repeat;
 }
 
 button{
