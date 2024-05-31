@@ -1,19 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    
+}
+
+body{
+    background-image: url(../sources/complexisim.png.300x189_q100.png) ;
+}
+
+button{
+    background-color: white;
+    width: 25%;
+    border: #E1E8F5;
+    font-size: 3em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 45px;
 }
 
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 10px solid;
+button:hover {
+    background-color: #87bff8;
 }
 
+button:active {
+    background-color: #5690b5;
+}
+
+.oper{
+    background-color: #E1E8F5;
+    color: #7A8DC7;
+}
+.pink-box{
+    background-color: #F8DAD8;
+    color: black;
+}
 .container {
-    display: grid;
-    place-items: center; /* Centers horizontally and vertically */
-    height: 100vh;       /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    flex-direction: column;
+    position: relative;
+}
+
+.case{
+    margin: 5em;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #6076B9;
+}
+
+.calculator {
+    background-color: #444;
+
+}
+
+.flex-item{
+    text-align: center;
+}
+#display{
+    width: 788px;
+    height: 250px;
+    box-sizing: border-box;
+    background-color: #6076B9;
+    color: white;
+    text-align: right;
+    padding-top: 20px;
+}
+
+#operations{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#equation{
+    font-size: 3em;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+#result{
+    font-size: 5em;
+    
+}
+#equal{
+    float:left;
+    font-size:4em;
+    font-weight:600;
+    padding-top: 95px;
+    padding-left: 25px;
 }
